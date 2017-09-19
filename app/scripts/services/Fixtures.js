@@ -1,6 +1,6 @@
 (function() {
      function Fixtures() {
-         var Fixtures = {};
+         var Foo = {};
 
       var albumPicasso = {
           title: 'The Colors',
@@ -32,10 +32,10 @@
           ]
       };
 
-      Fixtures.getAlbum = function() {
+      Foo.getAlbum = function() {
         return albumPicasso;
     };
-      Fixtures.getCollection = function(numberOfAlbums) {
+      Foo.getCollection = function(numberOfAlbums) {
         var collections = [];
         for(var i = 0; i < numberOfAlbums; i++) {
         collections.push(angular.copy(albumPicasso));
@@ -44,7 +44,7 @@
     };
 
 
-         return Fixtures;
+         return Foo;
      }
 
      angular
