@@ -41,10 +41,8 @@
         collections.push(angular.copy(albumPicasso));
       };
         return collections;
-    };
-
-
-         return Foo;
+      };
+        return Foo;
      }
 
      angular
