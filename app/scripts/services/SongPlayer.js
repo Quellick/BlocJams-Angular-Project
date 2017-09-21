@@ -30,7 +30,7 @@
  *@function playSong
  *@desc plays the current Buzz object and sets the playing property of the song object to true
  */
-          var playSong = function(){
+          var playSong = function(song){
              currentBuzzObject.play();
              song.playing = true;
           }
