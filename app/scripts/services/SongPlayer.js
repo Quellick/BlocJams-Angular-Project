@@ -59,6 +59,11 @@
              currentBuzzObject.stop();
              SongPlayer.currentSong.playing = null;
           };
+/*      
+*@function pauseSong
+*@desc pauses song and sets song.playing to false so album.html changes play/pause icon
+*@param {Object} song
+*/
           var pauseSong = function(song) {
             currentBuzzObject.pause();
             song.playing = false;
