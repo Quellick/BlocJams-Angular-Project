@@ -32,8 +32,14 @@
               });
 
 
-    SongPlayer.currentSong = song;
+      SongPlayer.currentSong = song;
  };
+ /*
+ *
+ *
+ *
+ */
+      SongPlayer.volume = null;
  /*
  *@function playSong
  *@desc plays the current Buzz object and sets the playing property of the song object to true
@@ -124,6 +130,16 @@
                  playSong(song);
             }
         };
+/*
+*
+*
+*
+*/
+      SongPlayer.setVolume = function(volume){
+         if (currentBuzzObject) {
+           currentBuzzObject.setVolume(volume);
+         }
+      };
 
 /*
 * @function setCurrentTime
@@ -135,6 +151,7 @@
           currentBuzzObject.setTime(time);
           }
         };
+
 
           return SongPlayer;
         }
